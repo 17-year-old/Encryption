@@ -1,16 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
 	<Transactions>
+    <Transaction>1899-12-30 00:00:00.000.131,D:\work\libsodium\Unit1.pas=D:\work\Lib\dpapi.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.455,=D:\work\Encryption\lib\dpapi.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.493,=D:\work\Encryption\lib\libsodium.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.872,D:\work\libsodium\SodiumDemo.dproj=C:\Users\fubai\Documents\Embarcadero\Studio\Projects\Project5.dproj</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.242,D:\work\libsodium\SodiumDemo.dproj=D:\work\Encryption\SodiumDemo.dproj</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.610,=D:\work\libsodium\Unit1.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.790,D:\work\Encryption\SodiumDemo.dproj=D:\work\Encryption\Demo.dproj</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.382,=D:\work\libsodium\libsodium.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.725,D:\work\Encryption\Demo.dproj=D:\work\Encryption\demo\Demo.dproj</Transaction>
     <Transaction>1899-12-30 00:00:00.000.220,=C:\Users\fubai\Documents\Embarcadero\Studio\Projects\Unit5.pas</Transaction>
     <Transaction>1899-12-30 00:00:00.000.104,=C:\Users\fubai\Documents\Embarcadero\Studio\Projects\Unit5.pas</Transaction>
-    <Transaction>1899-12-30 00:00:00.000.872,C:\Users\fubai\Documents\Embarcadero\Studio\Projects\Project5.dproj=D:\work\libsodium\SodiumDemo.dproj</Transaction>
-    <Transaction>1899-12-30 00:00:00.000.382,=D:\work\libsodium\libsodium.pas</Transaction>
-    <Transaction>2023-08-31 15:14:32.610,=D:\work\libsodium\Unit1.pas</Transaction>
-    <Transaction>2023-08-31 15:18:13.131,D:\work\Lib\dpapi.pas=D:\work\libsodium\Unit1.pas</Transaction>
-    <Transaction>2023-09-04 10:39:54.242,D:\work\Encryption\SodiumDemo.dproj=D:\work\libsodium\SodiumDemo.dproj</Transaction>
-    <Transaction>2023-09-04 10:40:07.790,D:\work\Encryption\Demo.dproj=D:\work\Encryption\SodiumDemo.dproj</Transaction>
-    <Transaction>2023-09-04 10:40:27.725,D:\work\Encryption\demo\Demo.dproj=D:\work\Encryption\Demo.dproj</Transaction>
-    <Transaction>2023-09-04 10:41:07.455,=D:\work\Encryption\lib\dpapi.pas</Transaction>
-    <Transaction>2023-09-04 10:41:07.493,=D:\work\Encryption\lib\libsodium.pas</Transaction>
   </Transactions>
 </BorlandProject>
