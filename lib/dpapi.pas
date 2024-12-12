@@ -3,7 +3,8 @@
 interface
 
 uses
-  System.Types, System.SysUtils, Winapi.Windows, System.NetEncoding;
+  System.Types, System.SysUtils, Winapi.Windows, System.NetEncoding,
+  Log4d.GlobalLogger;
 
 type
   DATA_BLOB = record
@@ -93,7 +94,7 @@ begin
     pEntropy, //optional entropy (PDATA_BLOB)
     nil, //reserved
     nil, //prompt struct
-    CRYPTPROTECT_UI_FORBIDDEN, //flags
+    CRYPTPROTECT_LOCAL_MACHINE, //flags
     @blobOut);
 
   if not bRes then
@@ -122,6 +123,7 @@ var
   pentropy: PDATA_BLOB;
   dataOut: DATA_BLOB;
   bRes: BOOL;
+  Bytes: TBytes;
 begin
   dataIn.pbData := Pointer(blob);
   dataIn.cbData := Length(blob);
@@ -139,12 +141,15 @@ begin
     pentropy, //optional entropy (PDATA_BLOB)
     nil, //reserved
     nil, //prompt struct
-    CRYPTPROTECT_UI_FORBIDDEN, //
+    0, //
     @dataOut);
+
   if not bRes then
     RaiseLastOSError;
 
-  Result := TEncoding.UTF8.GetString(TBytes(dataOut.pbData), 0, dataOut.cbData);
+  SetLength(Bytes, dataOut.cbData); //设置TBytes长度
+  Move(dataOut.pbData^, Bytes[0], dataOut.cbData); // 将字节复制到TBytes中
+  Result := TEncoding.UTF8.GetString(Bytes); // 使用UTF-8编码将字节数组转换为字符串
   LocalFree(HLOCAL(dataOut.pbData));
 end;
 
